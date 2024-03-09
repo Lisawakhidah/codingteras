@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style type="text/css">
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: greenyellow;
+        }
+
+        .container {
+            position: absolute;
+            left: auto;
+            top: auto;
+            background: saddlebrown;
+            padding: 20px 25px;
+            border-radius: 16px;
+            width: 300px;
+
+        }
+
+        .container .title {
+            padding: 7px 7px;
+            position: relative;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .container .content {
+            padding: 10px;
+            color: #ffffff;
+
+        }
+
+        .container label {
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .container form input {
+            background-color: transparent;
+            padding: 8px 30px;
+            margin-bottom: 15px;
+            border-radius: 7px;
+            color: #fff;
+        }
+
+        .container form button {
+            width: 90%;
+            height: 40px;
+            padding: 10px 20px;
+            border: 2px solid #00e5ee;
+            background-color: #091213;
+            font-size: 10px;
+            color: #fafafa;
+            border-radius: 20px;
+        }
+        #agama{
+            padding: 10px 80px;
+            border-radius: 5px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #reset{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Form Registrasi</h2>
+        </div>
+        <div class="content">
+            <form action="submit.html">
+                <fieldset>
+                    <legend>Registrasi</legend>
+                    <div class="kotak">
+                        <label for="nama_lengkap"><span>Nama Lengkap : </span></label>
+                        <input type="text" name="nama_lengkap" placeholder="Lisa Nusrotul Wakhidah" required><br>
+
+                        <label for="email"><span>Alamat Email :</span></label>
+                        <input type="email" name="email" placeholder="wakhidahlisa@gmail.com" required><br>
+
+                        <label for="no_telp"><span>No Telpon :</span></label>
+                        <input type="number" name="no_telp" placeholder="0893224893485" required><br>
+
+                        <label for="tempat_lahir"><span>Tempat Lahir :</span></label>
+                        <input type="text" name="tempat_lahir" placeholder="Kudus" required><br>
+
+                        <label for="tanggal_lahir"><span>Tanggal Lahir :</span></label><br>
+                        <input type="date" name="tanggal_lahir" required><br>
+
+                        <label for="JK"><span>Jenis Kelamin :</span></label><br>
+                        <input type="radio" name="JK" value="Laki-Laki" required><span>Laki-Laki</span>
+                        <input type="radio" name="JK" value="Perempuan" required><span>Perempuan</span><br>
+
+                        <label for="agama"><span>Agama :</span></label><br>
+                        <select name="agama" id="agama">
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                        <br>
+                        <br>
+
+                        <button type="submit" value="Submit">Submit</button><br><br>
+                        <button type="reset" id="reset" value="Reset">Reset</button>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

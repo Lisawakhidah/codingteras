@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white
+}
+.logo{
+    margin-left: 10px;
+}
+.navbar{
+    text-align: center;
+    margin: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 14px;
+    color: bisque;
+    font-size: 15px;
+}
